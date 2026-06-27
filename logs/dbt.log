@@ -1,0 +1,53 @@
+[0m22:48:55.456675 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 22:48:56.066151 | 26e38efc-bdc8-4297-a4a3-d7709595ade6 ==============================
+[0m22:48:56.066151 [info ] [MainThread]: Running with dbt=1.7.15
+[0m22:48:56.067671 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'use_colors': 'True', 'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'version_check': 'True', 'profiles_dir': '/Users/yevhen/.dbt', 'log_path': 'logs', 'static_parser': 'True', 'invocation_command': 'dbt init', 'quiet': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'warn_error': 'None', 'cache_selected_only': 'False', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True'}
+[0m22:49:22.754160 [debug] [MainThread]: Starter project path: /nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/include/starter_project
+[0m22:49:22.764768 [error] [MainThread]: Encountered an error:
+[Errno 13] Permission denied: 'dbt_project.yml'
+[0m22:49:22.768394 [error] [MainThread]: Traceback (most recent call last):
+  File "/nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/task/init.py", line 340, in run
+    self.create_new_project(project_name, profile_name)
+  File "/nix/store/nj5haz0w7pn9ybbdykxirrj30hisccck-python3.11-dbt-core-1.7.15/lib/python3.11/site-packages/dbt/task/init.py", line 285, in create_new_project
+    with open("dbt_project.yml", "w") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'dbt_project.yml'
+
+[0m22:49:22.992525 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 27.573837, "process_user_time": 2.251694, "process_kernel_time": 0.557465, "process_mem_max_rss": "102932480", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:49:22.993848 [debug] [MainThread]: Command `dbt init` failed at 22:49:22.993504 after 27.58 seconds
+[0m22:49:22.994724 [debug] [MainThread]: Flushing usage events
+[0m22:49:39.539861 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 22:49:39.606729 | aa40b601-c200-46f4-b712-7ecc889ed7f3 ==============================
+[0m22:49:39.606729 [info ] [MainThread]: Running with dbt=1.7.15
+[0m22:49:39.608246 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'log_format': 'default', 'profiles_dir': '/Users/yevhen/.dbt', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'use_experimental_parser': 'False', 'printer_width': '80', 'introspect': 'True', 'log_path': 'logs', 'debug': 'False', 'quiet': 'False', 'invocation_command': 'dbt init', 'log_cache_events': 'False', 'write_json': 'True', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'use_colors': 'True', 'version_check': 'True'}
+[0m22:49:47.883548 [info ] [MainThread]: A project called data_science_project already exists here.
+[0m22:49:47.889054 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 8.387879, "process_user_time": 2.250706, "process_kernel_time": 0.330259, "process_mem_max_rss": "104574976", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m22:49:47.890066 [debug] [MainThread]: Command `dbt init` succeeded at 22:49:47.889814 after 8.39 seconds
+[0m22:49:47.890756 [debug] [MainThread]: Flushing usage events
+[0m23:04:14.890323 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 23:04:14.979151 | 9801f057-ec04-41a3-a53d-fa444b220890 ==============================
+[0m23:04:14.979151 [info ] [MainThread]: Running with dbt=1.7.15
+[0m23:04:14.981702 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'debug': 'False', 'no_print': 'None', 'profiles_dir': '/Users/yevhen/.dbt', 'use_colors': 'True', 'introspect': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'printer_width': '80', 'indirect_selection': 'eager', 'partial_parse': 'True', 'write_json': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'invocation_command': 'dbt build', 'static_parser': 'True', 'fail_fast': 'False'}
+[0m23:04:14.983055 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/yevhen/Repos/data-science-project/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:04:14.991513 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 0.16133659, "process_user_time": 2.770211, "process_kernel_time": 0.408799, "process_mem_max_rss": "104067072", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:04:14.992831 [debug] [MainThread]: Command `dbt build` failed at 23:04:14.992496 after 0.16 seconds
+[0m23:04:14.993818 [debug] [MainThread]: Flushing usage events
